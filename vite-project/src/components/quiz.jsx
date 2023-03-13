@@ -101,7 +101,7 @@ export default function Quiz(props) {
             :
 
             <>  
-                {isFullMark && <Confetti />}
+                {isFullMark && isFinish && <Confetti />}
                 <div className="questions-container"> {questionElements} </div>
                 <div className="bottom-quiz">
                     {isFinish && <h3>You scored {nbCorrectAnswers}/{props.nbQuestions} correct answers</h3>}
